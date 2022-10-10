@@ -37,3 +37,7 @@ Nearly everything in UML is optional.
 It should not be used to model everything.
 The specification is open to interpretation.
 Is intended to be extended. 
+
+## Course support
+
+"UML 2.0 in a nutshell" - by Dan Pilone
