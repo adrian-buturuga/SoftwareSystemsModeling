@@ -27,7 +27,5 @@ Examples of pseudostates:
 - fork and join 
 - end pseudostate
 
-![bla](images/exercise.PNG)
-
 Exercise:
-Coffee machine 
+Coffee Machine 
