@@ -32,6 +32,12 @@ Common functionality can be factored out from several use cases and included. In
 If a particular use case can be extended to provide extra functionality, under some optional conditions, a use case can extend another. The difference between inclusion and extension is that an extended use case is a valid use case on it's own. 
 
 Excercise: 
-Delivery application (think Glovo)
+YouTube
 
-![images/usecase](images/diagram.jpg)
+
+Guest:
+- login
+- register
+
+Regular user: 
+- watch video 
