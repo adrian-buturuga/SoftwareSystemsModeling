@@ -1,0 +1,3 @@
+[Timestamp: 2022-11-29T16:24:41.239920800Z] [Info: Logging info from ClassA]
+[Timestamp: 2022-11-29T16:24:41.336067500Z] [Info: Logging info from ClassB]
+[Timestamp: 2022-11-29T16:24:41.346061400Z] [Info: Logging info from ClassC]

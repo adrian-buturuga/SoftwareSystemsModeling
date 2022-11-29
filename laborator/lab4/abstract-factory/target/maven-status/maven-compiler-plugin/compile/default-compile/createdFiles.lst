@@ -1,0 +1,6 @@
+com\factory\method\App.class
+com\factory\method\CherryPizza.class
+com\factory\method\CheesePizza.class
+com\factory\method\PizzaFactory.class
+com\factory\method\DiavolaPizza.class
+com\factory\method\Pizza.class
