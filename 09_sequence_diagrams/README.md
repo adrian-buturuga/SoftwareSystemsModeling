@@ -29,3 +29,91 @@ Often there are times when a particular sequence of event occurrences has specia
 - Loop: `loop`
 
 Exercise: Nerd dinner
+
+```mermaid
+sequenceDiagram
+ 
+    actor Alice
+    actor other_participants
+    participant app
+    participant database
+
+    Alice -> +app: createEvent(date, location)
+    activate Alice 
+    app -> +database: create entity
+    database --> app: created
+    par all other participants 
+        app -> +other_participants: new event notification
+    end 
+    app --> Alice: event created
+    par each participant
+        other_participants -> (2)app: vote
+        app -> database: store vote
+        database --> app: ok
+        app --> other_participants: vote registered
+    end
+    alt Alice is happy with votes
+        Alice -> app: confirmEvent()
+        app -> database: update event status
+        database --> app: updated
+        loop all confirming participants
+            app -> other_participants: It's a date!
+        end
+        app --> Alice: ok
+    else insufficient people responded positively
+        Alice -> app: cancelEvent()
+        app -> database: update event status 
+        database --> app: updated
+        app --> Alice: ok
+    end 
+    destroy app
+```
+
+Code Versioning Flow 
+
+
+```mermaid 
+
+sequenceDiagram
+
+actor developer
+participant develop 
+participant integration 
+actor tester 
+participant test_environment 
+participant master 
+
+loop as many times as needed :D 
+    developer -> +develop: push code changes
+    activate developer
+    develop --> developer: ok
+end
+
+developer -> +integration: merge develop 
+integration -> develop: gimme the changes :D 
+develop --> integration: here you go 
+integration -> integration: apply changes 
+
+note over developer, develop, integration, tester, test_environment, master, production: notify tester through other means that he can start testing 
+
+tester -> integration: checkout 
+activate tester 
+integration --> tester: here you go 
+tester -> tester: build image 
+tester -> +test_environment: deploy 
+test_environment --> tester: deploy ok
+tester -> test_environment: run tests
+alt tests ok
+    test_environment --> tester: tests passed
+    tester -> +master: merge integration 
+    master -> integration: gimme the changes :D 
+    integration --> master: here you go 
+    master -> master: apply changes 
+    master -> +production: through magic!!
+else failed tests 
+    test_environment --> tester: failed tests
+    tester -> developer: do your job correctly!
+    developer --> tester: ok, ok!
+end 
+
+```
