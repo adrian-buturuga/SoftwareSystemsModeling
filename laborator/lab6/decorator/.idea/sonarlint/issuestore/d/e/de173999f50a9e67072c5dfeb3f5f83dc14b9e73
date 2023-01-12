@@ -1,0 +1,9 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(ç½ÏŒüÿÿÿÿ8ŞŒ½åÙ0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ß¿Úİ8é·½åÙ0
+W
+java:S1128":Remove this unused import 'decorator.condiments.Cinnamon'.(•äœ†8àŒ½åÙ0
+[
+java:S1128"9Remove this unused import 'decorator.condiments.SoyMilk'.(˜¦µ¥úÿÿÿÿ8âŒ½åÙ0
+U
+java:S1128"8Remove this unused import 'decorator.drinks.Cappuccino'.(¹•ãğ8äŒ½åÙ0
