@@ -1,0 +1,17 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒƒ›­ÿÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Ù½¥
+k	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­‰Ì‚ûÿÿÿÿ
+k	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÖ¯úÿÿÿÿ
+k	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÖ¯úÿÿÿÿ
+k	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÀÊ€şÿÿÿÿ
+k	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©•ùØùÿÿÿÿ
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(›˜Çûûÿÿÿÿ8¤„Ü0
+Y
+java:S16593">Declare "j" and all following declarations on a separate line.(Æ™‚ùÿÿÿÿ
+E
+java:S11978"*Move the array designators [] to the type.(ÔÀÊ€şÿÿÿÿ
+E
+java:S11979"*Move the array designators [] to the type.(©•ùØùÿÿÿÿ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
